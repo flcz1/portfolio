@@ -23,7 +23,7 @@
         <a href="https://linkedin.com" target="_blank" class="text-gray-400 hover:text-[#c778dd] transition transform hover:-translate-y-1">
             <i class="fab fa-linkedin text-xl"></i>
         </a>
-        <a href="mailto:contact@example.com" target="_blank" class="text-gray-400 hover:text-[#c778dd] transition transform hover:-translate-y-1">
+        <a href="mailto:contact@example.com" class="text-gray-400 hover:text-[#c778dd] transition transform hover:-translate-y-1">
             <i class="fas fa-envelope text-xl"></i>
         </a>
     </div>
@@ -64,8 +64,9 @@
                     <a href="#projects" class="inline-block font-['Fira_Code'] text-sm text-white border border-[#c778dd] px-6 py-3 hover:bg-[#c778dd]/20 transition duration-300">
                         View my work ~~>
                     </a>
-                    <a href="cv.pdf" target="_blank" class="inline-block font-['Fira_Code'] text-sm text-gray-900 bg-[#c778dd] font-semibold px-6 py-3 hover:bg-[#c778dd]/80 transition duration-300">
-                        <i class="fas fa-file-alt mr-2"></i>Resume / CV
+                    <!-- مربوط بنفس اسم ملف السيرة الذاتية الذي رفعته -->
+                    <a href="Abdullah%20Hassan%20Alzabry%20-%20CV.pdf" target="_blank" class="inline-block font-['Fira_Code'] text-sm text-gray-900 bg-[#c778dd] font-semibold px-6 py-3 hover:bg-[#c778dd]/80 transition duration-300">
+                        <i class="fas fa-file-pdf mr-2"></i>Resume / CV
                     </a>
                 </div>
             </div>
@@ -168,12 +169,10 @@
                 <!-- 1. معسكر الأمن السيبراني - آباد -->
                 <div class="border border-[#c778dd]/60 bg-[#282c33]/60 hover:border-[#c778dd] transition duration-300 group overflow-hidden flex flex-col justify-between shadow-[0_0_20px_rgba(199,120,221,0.1)]">
                     <div>
-                        <div class="h-48 overflow-hidden bg-[#18181c] border-b border-gray-700 relative flex items-center justify-center">
-                            <img src="abad-bootcamp.jpg" alt="ABAD Cybersecurity Bootcamp" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
-                            <div class="hidden flex-col items-center justify-center text-center p-4">
-                                <i class="fas fa-user-shield text-4xl text-[#c778dd] mb-2"></i>
-                                <span class="font-['Fira_Code'] text-xs text-gray-400">ABAD Training Institute</span>
-                            </div>
+                        <div class="h-44 bg-[#18181c] border-b border-gray-700 flex flex-col items-center justify-center text-center p-4">
+                            <i class="fas fa-user-shield text-4xl text-[#c778dd] mb-3 group-hover:scale-110 transition"></i>
+                            <span class="font-['Fira_Code'] text-xs text-white font-semibold">ABAD Cybersecurity Bootcamp</span>
+                            <span class="font-['Fira_Code'] text-[11px] text-gray-400 mt-1">معهد آباد للتدريب</span>
                         </div>
                         <div class="p-5">
                             <span class="font-['Fira_Code'] text-xs text-[#c778dd]">ABAD Training | معهد آباد</span>
@@ -183,19 +182,17 @@
                     </div>
                     <div class="px-5 pb-4 pt-2 border-t border-gray-800 flex justify-between items-center font-['Fira_Code'] text-xs">
                         <span class="text-gray-400">Intensive Track</span>
-                        <a href="abad-bootcamp.jpg" target="_blank" class="text-[#c778dd] hover:underline">View Cert <~></a>
+                        <span class="text-[#c778dd]">Completed ✓</span>
                     </div>
                 </div>
 
                 <!-- 2. شهادة BTL1 -->
                 <div class="border border-gray-700 bg-[#282c33]/40 hover:border-[#c778dd] transition duration-300 group overflow-hidden flex flex-col justify-between">
                     <div>
-                        <div class="h-48 overflow-hidden bg-[#18181c] border-b border-gray-700 relative flex items-center justify-center">
-                            <img src="btl1.jpg" alt="Blue Team Level 1 (BTL1)" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
-                            <div class="hidden flex-col items-center justify-center text-center p-4">
-                                <i class="fas fa-shield-halved text-4xl text-[#c778dd] mb-2"></i>
-                                <span class="font-['Fira_Code'] text-xs text-gray-400">Defensive Security</span>
-                            </div>
+                        <div class="h-44 bg-[#18181c] border-b border-gray-700 flex flex-col items-center justify-center text-center p-4">
+                            <i class="fas fa-shield-halved text-4xl text-[#c778dd] mb-3 group-hover:scale-110 transition"></i>
+                            <span class="font-['Fira_Code'] text-xs text-white font-semibold">Blue Team Level 1 (BTL1)</span>
+                            <span class="font-['Fira_Code'] text-[11px] text-gray-400 mt-1">عمليات الأمن السيبراني للمبتدئين</span>
                         </div>
                         <div class="p-5">
                             <span class="font-['Fira_Code'] text-xs text-[#c778dd]">ABAD Training | معهد آباد</span>
@@ -204,20 +201,18 @@
                         </div>
                     </div>
                     <div class="px-5 pb-4 pt-2 border-t border-gray-800 flex justify-between items-center font-['Fira_Code'] text-xs">
-                        <span class="text-gray-400">Blue Team</span>
-                        <a href="btl1.jpg" target="_blank" class="text-[#c778dd] hover:underline">View Cert <~></a>
+                        <span class="text-gray-400">PDF Certificate</span>
+                        <a id="cert-btl1" href="#" target="_blank" class="text-[#c778dd] hover:underline">View Cert <~></a>
                     </div>
                 </div>
 
                 <!-- 3. شهادة eJPT -->
                 <div class="border border-gray-700 bg-[#282c33]/40 hover:border-[#c778dd] transition duration-300 group overflow-hidden flex flex-col justify-between">
                     <div>
-                        <div class="h-48 overflow-hidden bg-[#18181c] border-b border-gray-700 relative flex items-center justify-center">
-                            <img src="ejpt.jpg" alt="eJPT Certificate" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
-                            <div class="hidden flex-col items-center justify-center text-center p-4">
-                                <i class="fas fa-bug-slash text-4xl text-[#c778dd] mb-2"></i>
-                                <span class="font-['Fira_Code'] text-xs text-gray-400">Offensive Security</span>
-                            </div>
+                        <div class="h-44 bg-[#18181c] border-b border-gray-700 flex flex-col items-center justify-center text-center p-4">
+                            <i class="fas fa-bug-slash text-4xl text-[#c778dd] mb-3 group-hover:scale-110 transition"></i>
+                            <span class="font-['Fira_Code'] text-xs text-white font-semibold">eLearnSecurity eJPT</span>
+                            <span class="font-['Fira_Code'] text-[11px] text-gray-400 mt-1">Junior Penetration Tester</span>
                         </div>
                         <div class="p-5">
                             <span class="font-['Fira_Code'] text-xs text-[#c778dd]">ABAD Training | معهد آباد</span>
@@ -226,20 +221,18 @@
                         </div>
                     </div>
                     <div class="px-5 pb-4 pt-2 border-t border-gray-800 flex justify-between items-center font-['Fira_Code'] text-xs">
-                        <span class="text-gray-400">Red Team</span>
-                        <a href="ejpt.jpg" target="_blank" class="text-[#c778dd] hover:underline">View Cert <~></a>
+                        <span class="text-gray-400">PDF Certificate</span>
+                        <a id="cert-ejpt" href="#" target="_blank" class="text-[#c778dd] hover:underline">View Cert <~></a>
                     </div>
                 </div>
 
                 <!-- 4. شهادة CompTIA Security+ -->
                 <div class="border border-gray-700 bg-[#282c33]/40 hover:border-[#c778dd] transition duration-300 group overflow-hidden flex flex-col justify-between">
                     <div>
-                        <div class="h-48 overflow-hidden bg-[#18181c] border-b border-gray-700 relative flex items-center justify-center">
-                            <img src="secplus.jpg" alt="CompTIA Security+" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
-                            <div class="hidden flex-col items-center justify-center text-center p-4">
-                                <i class="fas fa-lock text-4xl text-[#c778dd] mb-2"></i>
-                                <span class="font-['Fira_Code'] text-xs text-gray-400">Core Security</span>
-                            </div>
+                        <div class="h-44 bg-[#18181c] border-b border-gray-700 flex flex-col items-center justify-center text-center p-4">
+                            <i class="fas fa-lock text-4xl text-[#c778dd] mb-3 group-hover:scale-110 transition"></i>
+                            <span class="font-['Fira_Code'] text-xs text-white font-semibold">CompTIA Security+</span>
+                            <span class="font-['Fira_Code'] text-[11px] text-gray-400 mt-1">أساسيات أمن المعلومات</span>
                         </div>
                         <div class="p-5">
                             <span class="font-['Fira_Code'] text-xs text-[#c778dd]">ABAD Training | معهد آباد</span>
@@ -248,20 +241,18 @@
                         </div>
                     </div>
                     <div class="px-5 pb-4 pt-2 border-t border-gray-800 flex justify-between items-center font-['Fira_Code'] text-xs">
-                        <span class="text-gray-400">Security Core</span>
-                        <a href="secplus.jpg" target="_blank" class="text-[#c778dd] hover:underline">View Cert <~></a>
+                        <span class="text-gray-400">PDF Certificate</span>
+                        <a id="cert-sec" href="#" target="_blank" class="text-[#c778dd] hover:underline">View Cert <~></a>
                     </div>
                 </div>
 
                 <!-- 5. شهادة Network+ Fundamentals -->
                 <div class="border border-gray-700 bg-[#282c33]/40 hover:border-[#c778dd] transition duration-300 group overflow-hidden flex flex-col justify-between">
                     <div>
-                        <div class="h-48 overflow-hidden bg-[#18181c] border-b border-gray-700 relative flex items-center justify-center">
-                            <img src="netplus.jpg" alt="CompTIA Network+" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
-                            <div class="hidden flex-col items-center justify-center text-center p-4">
-                                <i class="fas fa-network-wired text-4xl text-[#c778dd] mb-2"></i>
-                                <span class="font-['Fira_Code'] text-xs text-gray-400">Network Infrastructure</span>
-                            </div>
+                        <div class="h-44 bg-[#18181c] border-b border-gray-700 flex flex-col items-center justify-center text-center p-4">
+                            <i class="fas fa-network-wired text-4xl text-[#c778dd] mb-3 group-hover:scale-110 transition"></i>
+                            <span class="font-['Fira_Code'] text-xs text-white font-semibold">CompTIA Network+</span>
+                            <span class="font-['Fira_Code'] text-[11px] text-gray-400 mt-1">أساسيات الشبكات</span>
                         </div>
                         <div class="p-5">
                             <span class="font-['Fira_Code'] text-xs text-[#c778dd]">ABAD Training | معهد آباد</span>
@@ -270,20 +261,18 @@
                         </div>
                     </div>
                     <div class="px-5 pb-4 pt-2 border-t border-gray-800 flex justify-between items-center font-['Fira_Code'] text-xs">
-                        <span class="text-gray-400">Networking</span>
-                        <a href="netplus.jpg" target="_blank" class="text-[#c778dd] hover:underline">View Cert <~></a>
+                        <span class="text-gray-400">PDF Certificate</span>
+                        <a id="cert-net" href="#" target="_blank" class="text-[#c778dd] hover:underline">View Cert <~></a>
                     </div>
                 </div>
 
                 <!-- 6. شهادة Linux Fundamentals -->
                 <div class="border border-gray-700 bg-[#282c33]/40 hover:border-[#c778dd] transition duration-300 group overflow-hidden flex flex-col justify-between">
                     <div>
-                        <div class="h-48 overflow-hidden bg-[#18181c] border-b border-gray-700 relative flex items-center justify-center">
-                            <img src="linux.jpg" alt="Linux Fundamentals" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
-                            <div class="hidden flex-col items-center justify-center text-center p-4">
-                                <i class="fab fa-linux text-4xl text-[#c778dd] mb-2"></i>
-                                <span class="font-['Fira_Code'] text-xs text-gray-400">Linux OS</span>
-                            </div>
+                        <div class="h-44 bg-[#18181c] border-b border-gray-700 flex flex-col items-center justify-center text-center p-4">
+                            <i class="fab fa-linux text-4xl text-[#c778dd] mb-3 group-hover:scale-110 transition"></i>
+                            <span class="font-['Fira_Code'] text-xs text-white font-semibold">Linux+ Fundamentals</span>
+                            <span class="font-['Fira_Code'] text-[11px] text-gray-400 mt-1">أساسيات نظام لينكس</span>
                         </div>
                         <div class="p-5">
                             <span class="font-['Fira_Code'] text-xs text-[#c778dd]">ABAD Training | معهد آباد</span>
@@ -292,8 +281,8 @@
                         </div>
                     </div>
                     <div class="px-5 pb-4 pt-2 border-t border-gray-800 flex justify-between items-center font-['Fira_Code'] text-xs">
-                        <span class="text-gray-400">OS Admin</span>
-                        <a href="linux.jpg" target="_blank" class="text-[#c778dd] hover:underline">View Cert <~></a>
+                        <span class="text-gray-400">PDF Certificate</span>
+                        <a id="cert-linux" href="#" target="_blank" class="text-[#c778dd] hover:underline">View Cert <~></a>
                     </div>
                 </div>
 
@@ -314,24 +303,18 @@
                 </a>
             </div>
 
-            <!-- ----------------------------------------------------------------- -->
             <!-- أ) قسم مبادرة السعودية تبرمج (Saudi Codes) -->
-            <!-- ----------------------------------------------------------------- -->
             <div class="mb-14">
                 <h3 class="font-['Fira_Code'] text-white text-xl mb-6 flex items-center gap-3">
                     <span class="text-[#c778dd]">//</span> Saudi Codes Initiative (مبادرة السعودية تبرمج - مسك و STC)
                 </h3>
                 <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
                     
-                    <!-- سفراء السعودية تبرمج -->
                     <div class="border border-gray-700 bg-[#282c33]/40 hover:border-[#c778dd] transition group overflow-hidden flex flex-col justify-between">
                         <div>
-                            <div class="h-40 overflow-hidden bg-[#18181c] border-b border-gray-700 flex items-center justify-center">
-                                <img src="saudicodes-ambassador.jpg" alt="سفراء السعودية تبرمج" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
-                                <div class="hidden flex-col items-center justify-center p-4 text-center">
-                                    <span class="font-['Fira_Code'] text-lg font-bold text-[#c778dd]">السعودية تبرمج /&gt;</span>
-                                    <span class="text-xs text-gray-400 mt-1">Misk & MCIT</span>
-                                </div>
+                            <div class="h-36 bg-[#18181c] border-b border-gray-700 flex flex-col items-center justify-center p-4 text-center">
+                                <span class="font-['Fira_Code'] text-lg font-bold text-[#c778dd]">السعودية تبرمج /&gt;</span>
+                                <span class="text-xs text-gray-400 mt-1">Misk & MCIT</span>
                             </div>
                             <div class="p-4">
                                 <h4 class="text-white font-bold text-base">سفراء السعودية تبرمج</h4>
@@ -340,19 +323,15 @@
                         </div>
                         <div class="px-4 pb-3 pt-2 border-t border-gray-800 flex justify-between items-center font-['Fira_Code'] text-xs">
                             <span class="text-gray-500">#293530</span>
-                            <a href="https://saudi.codes/certificate/47a31a9" target="_blank" class="text-[#c778dd] hover:underline">Verify <~></a>
+                            <a href="20231122191310.pdf#page=2" target="_blank" class="text-[#c778dd] hover:underline">View PDF <~></a>
                         </div>
                     </div>
 
-                    <!-- البرمجة باستخدام Python -->
                     <div class="border border-gray-700 bg-[#282c33]/40 hover:border-[#c778dd] transition group overflow-hidden flex flex-col justify-between">
                         <div>
-                            <div class="h-40 overflow-hidden bg-[#18181c] border-b border-gray-700 flex items-center justify-center">
-                                <img src="saudicodes-python.jpg" alt="البرمجة باستخدام Python" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
-                                <div class="hidden flex-col items-center justify-center p-4 text-center">
-                                    <i class="fab fa-python text-3xl text-[#c778dd] mb-1"></i>
-                                    <span class="text-xs text-gray-400 font-['Fira_Code']">Saudi Codes /&gt;</span>
-                                </div>
+                            <div class="h-36 bg-[#18181c] border-b border-gray-700 flex flex-col items-center justify-center p-4 text-center">
+                                <i class="fab fa-python text-3xl text-[#c778dd] mb-1"></i>
+                                <span class="text-xs text-gray-400 font-['Fira_Code']">Saudi Codes /&gt;</span>
                             </div>
                             <div class="p-4">
                                 <h4 class="text-white font-bold text-base">البرمجة باستخدام Python</h4>
@@ -361,19 +340,15 @@
                         </div>
                         <div class="px-4 pb-3 pt-2 border-t border-gray-800 flex justify-between items-center font-['Fira_Code'] text-xs">
                             <span class="text-gray-500">#293529</span>
-                            <a href="https://saudi.codes/certificate/6khu3pmv" target="_blank" class="text-[#c778dd] hover:underline">Verify <~></a>
+                            <a href="20231122191310.pdf#page=4" target="_blank" class="text-[#c778dd] hover:underline">View PDF <~></a>
                         </div>
                     </div>
 
-                    <!-- البرمجة باستخدام JavaScript -->
                     <div class="border border-gray-700 bg-[#282c33]/40 hover:border-[#c778dd] transition group overflow-hidden flex flex-col justify-between">
                         <div>
-                            <div class="h-40 overflow-hidden bg-[#18181c] border-b border-gray-700 flex items-center justify-center">
-                                <img src="saudicodes-js.jpg" alt="البرمجة باستخدام JavaScript" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
-                                <div class="hidden flex-col items-center justify-center p-4 text-center">
-                                    <i class="fab fa-js text-3xl text-[#c778dd] mb-1"></i>
-                                    <span class="text-xs text-gray-400 font-['Fira_Code']">Saudi Codes /&gt;</span>
-                                </div>
+                            <div class="h-36 bg-[#18181c] border-b border-gray-700 flex flex-col items-center justify-center p-4 text-center">
+                                <i class="fab fa-js text-3xl text-[#c778dd] mb-1"></i>
+                                <span class="text-xs text-gray-400 font-['Fira_Code']">Saudi Codes /&gt;</span>
                             </div>
                             <div class="p-4">
                                 <h4 class="text-white font-bold text-base">البرمجة باستخدام JavaScript</h4>
@@ -382,19 +357,15 @@
                         </div>
                         <div class="px-4 pb-3 pt-2 border-t border-gray-800 flex justify-between items-center font-['Fira_Code'] text-xs">
                             <span class="text-gray-500">#293528</span>
-                            <a href="https://saudi.codes/certificate/5mdfce92" target="_blank" class="text-[#c778dd] hover:underline">Verify <~></a>
+                            <a href="20231122191310.pdf#page=5" target="_blank" class="text-[#c778dd] hover:underline">View PDF <~></a>
                         </div>
                     </div>
 
-                    <!-- البرمجة باستخدام MakeCode -->
                     <div class="border border-gray-700 bg-[#282c33]/40 hover:border-[#c778dd] transition group overflow-hidden flex flex-col justify-between">
                         <div>
-                            <div class="h-40 overflow-hidden bg-[#18181c] border-b border-gray-700 flex items-center justify-center">
-                                <img src="saudicodes-makecode.jpg" alt="البرمجة باستخدام MakeCode" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
-                                <div class="hidden flex-col items-center justify-center p-4 text-center">
-                                    <i class="fas fa-laptop-code text-3xl text-[#c778dd] mb-1"></i>
-                                    <span class="text-xs text-gray-400 font-['Fira_Code']">Saudi Codes /&gt;</span>
-                                </div>
+                            <div class="h-36 bg-[#18181c] border-b border-gray-700 flex flex-col items-center justify-center p-4 text-center">
+                                <i class="fas fa-laptop-code text-3xl text-[#c778dd] mb-1"></i>
+                                <span class="text-xs text-gray-400 font-['Fira_Code']">Saudi Codes /&gt;</span>
                             </div>
                             <div class="p-4">
                                 <h4 class="text-white font-bold text-base">البرمجة باستخدام MakeCode</h4>
@@ -403,33 +374,27 @@
                         </div>
                         <div class="px-4 pb-3 pt-2 border-t border-gray-800 flex justify-between items-center font-['Fira_Code'] text-xs">
                             <span class="text-gray-500">#293527</span>
-                            <a href="https://saudi.codes/certificate/113j6ob8" target="_blank" class="text-[#c778dd] hover:underline">Verify <~></a>
+                            <a href="20231122191310.pdf#page=3" target="_blank" class="text-[#c778dd] hover:underline">View PDF <~></a>
                         </div>
                     </div>
 
                 </div>
             </div>
 
-            <!-- ----------------------------------------------------------------- -->
             <!-- ب) قسم مسابقة المبرمج الواعد فقط (Promising Programmer) -->
-            <!-- ----------------------------------------------------------------- -->
             <div class="mb-14">
                 <h3 class="font-['Fira_Code'] text-white text-xl mb-6 flex items-center gap-3">
                     <span class="text-[#c778dd]">//</span> The Promising Programmer (المسابقة الوطنية للبرمجة - المبرمج الواعد)
                 </h3>
                 <div class="grid md:grid-cols-3 gap-6">
                     
-                    <!-- الجولة الأولى -->
                     <div class="border border-gray-700 bg-[#282c33]/40 hover:border-orange-400 transition group overflow-hidden flex flex-col justify-between">
                         <div>
-                            <div class="h-44 overflow-hidden bg-[#18181c] border-b border-gray-700 flex items-center justify-center">
-                                <img src="waed-round1.jpg" alt="المبرمج الواعد - الجولة الأولى" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
-                                <div class="hidden flex-col items-center justify-center p-4 text-center">
-                                    <div class="w-14 h-14 rounded-full bg-orange-500/20 border border-orange-400 flex items-center justify-center mb-2">
-                                        <i class="fas fa-medal text-2xl text-orange-400"></i>
-                                    </div>
-                                    <span class="text-sm font-bold text-orange-400">المبرمج الواعد</span>
+                            <div class="h-40 bg-[#18181c] border-b border-gray-700 flex flex-col items-center justify-center p-4 text-center">
+                                <div class="w-12 h-12 rounded-full bg-orange-500/20 border border-orange-400 flex items-center justify-center mb-2">
+                                    <i class="fas fa-medal text-xl text-orange-400"></i>
                                 </div>
+                                <span class="text-sm font-bold text-orange-400">المبرمج الواعد - الجولة 1</span>
                             </div>
                             <div class="p-4">
                                 <span class="font-['Fira_Code'] text-xs text-orange-400">Ministry of Education & MCIT</span>
@@ -438,22 +403,18 @@
                             </div>
                         </div>
                         <div class="px-4 pb-3 pt-2 border-t border-gray-800 flex justify-between items-center font-['Fira_Code'] text-xs">
-                            <span class="text-gray-500">1st Edition</span>
+                            <span class="text-gray-500">Page 9</span>
                             <a href="20231122191310.pdf#page=9" target="_blank" class="text-orange-400 hover:underline">View Cert <~></a>
                         </div>
                     </div>
 
-                    <!-- الجولة الثانية -->
                     <div class="border border-gray-700 bg-[#282c33]/40 hover:border-orange-400 transition group overflow-hidden flex flex-col justify-between">
                         <div>
-                            <div class="h-44 overflow-hidden bg-[#18181c] border-b border-gray-700 flex items-center justify-center">
-                                <img src="waed-round2.jpg" alt="المبرمج الواعد - الجولة الثانية" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
-                                <div class="hidden flex-col items-center justify-center p-4 text-center">
-                                    <div class="w-14 h-14 rounded-full bg-orange-500/20 border border-orange-400 flex items-center justify-center mb-2">
-                                        <i class="fas fa-medal text-2xl text-orange-400"></i>
-                                    </div>
-                                    <span class="text-sm font-bold text-orange-400">المبرمج الواعد</span>
+                            <div class="h-40 bg-[#18181c] border-b border-gray-700 flex flex-col items-center justify-center p-4 text-center">
+                                <div class="w-12 h-12 rounded-full bg-orange-500/20 border border-orange-400 flex items-center justify-center mb-2">
+                                    <i class="fas fa-medal text-xl text-orange-400"></i>
                                 </div>
+                                <span class="text-sm font-bold text-orange-400">المبرمج الواعد - الجولة 2</span>
                             </div>
                             <div class="p-4">
                                 <span class="font-['Fira_Code'] text-xs text-orange-400">Ministry of Education & MCIT</span>
@@ -462,22 +423,18 @@
                             </div>
                         </div>
                         <div class="px-4 pb-3 pt-2 border-t border-gray-800 flex justify-between items-center font-['Fira_Code'] text-xs">
-                            <span class="text-gray-500">1st Edition</span>
+                            <span class="text-gray-500">Page 8</span>
                             <a href="20231122191310.pdf#page=8" target="_blank" class="text-orange-400 hover:underline">View Cert <~></a>
                         </div>
                     </div>
 
-                    <!-- الجولة الثالثة -->
                     <div class="border border-gray-700 bg-[#282c33]/40 hover:border-orange-400 transition group overflow-hidden flex flex-col justify-between">
                         <div>
-                            <div class="h-44 overflow-hidden bg-[#18181c] border-b border-gray-700 flex items-center justify-center">
-                                <img src="waed-round3.jpg" alt="المبرمج الواعد - الجولة الثالثة" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
-                                <div class="hidden flex-col items-center justify-center p-4 text-center">
-                                    <div class="w-14 h-14 rounded-full bg-orange-500/20 border border-orange-400 flex items-center justify-center mb-2">
-                                        <i class="fas fa-trophy text-2xl text-orange-400"></i>
-                                    </div>
-                                    <span class="text-sm font-bold text-orange-400">المبرمج الواعد</span>
+                            <div class="h-40 bg-[#18181c] border-b border-gray-700 flex flex-col items-center justify-center p-4 text-center">
+                                <div class="w-12 h-12 rounded-full bg-orange-500/20 border border-orange-400 flex items-center justify-center mb-2">
+                                    <i class="fas fa-trophy text-xl text-orange-400"></i>
                                 </div>
+                                <span class="text-sm font-bold text-orange-400">المبرمج الواعد - الجولة 3</span>
                             </div>
                             <div class="p-4">
                                 <span class="font-['Fira_Code'] text-xs text-orange-400">Ministry of Education & MCIT</span>
@@ -486,7 +443,7 @@
                             </div>
                         </div>
                         <div class="px-4 pb-3 pt-2 border-t border-gray-800 flex justify-between items-center font-['Fira_Code'] text-xs">
-                            <span class="text-gray-500">1st Edition</span>
+                            <span class="text-gray-500">Page 10</span>
                             <a href="20231122191310.pdf#page=10" target="_blank" class="text-orange-400 hover:underline">View Cert <~></a>
                         </div>
                     </div>
@@ -494,9 +451,7 @@
                 </div>
             </div>
 
-            <!-- ----------------------------------------------------------------- -->
             <!-- ج) قسم شهادة ماين كرافت باللون الأحمر فقط (Minecraft Hour of Code) -->
-            <!-- ----------------------------------------------------------------- -->
             <div>
                 <h3 class="font-['Fira_Code'] text-white text-xl mb-6 flex items-center gap-3">
                     <span class="text-red-500">//</span> Minecraft Hour of Code (الشهادة الحمراء)
@@ -505,14 +460,11 @@
                     
                     <div class="border border-red-900/60 bg-[#282c33]/40 hover:border-red-500 transition group overflow-hidden flex flex-col justify-between shadow-[0_0_20px_rgba(239,68,68,0.1)]">
                         <div>
-                            <div class="h-48 overflow-hidden bg-[#18181c] border-b border-gray-700 flex items-center justify-center">
-                                <img src="minecraft-red.jpg" alt="Minecraft Hour of Code Red Certificate" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
-                                <div class="hidden flex-col items-center justify-center p-4 text-center">
-                                    <div class="px-4 py-2 bg-red-600/20 border-2 border-red-500 text-red-400 font-['Fira_Code'] font-bold text-lg tracking-wider mb-2">
-                                        MINECRAFT
-                                    </div>
-                                    <span class="text-xs text-gray-400 font-['Fira_Code']">Code.org & Mojang</span>
+                            <div class="h-44 bg-[#18181c] border-b border-gray-700 flex flex-col items-center justify-center p-4 text-center">
+                                <div class="px-4 py-2 bg-red-600/20 border-2 border-red-500 text-red-400 font-['Fira_Code'] font-bold text-lg tracking-wider mb-2">
+                                    MINECRAFT
                                 </div>
+                                <span class="text-xs text-gray-400 font-['Fira_Code']">Code.org & Mojang</span>
                             </div>
                             <div class="p-5">
                                 <span class="font-['Fira_Code'] text-xs text-red-400">Code.org & Microsoft / Mojang</span>
@@ -521,7 +473,7 @@
                             </div>
                         </div>
                         <div class="px-5 pb-4 pt-2 border-t border-gray-800 flex justify-between items-center font-['Fira_Code'] text-xs">
-                            <span class="text-red-400">Red Edition</span>
+                            <span class="text-red-400">Page 6</span>
                             <a href="20231122191310.pdf#page=6" target="_blank" class="text-red-400 hover:underline">View Cert <~></a>
                         </div>
                     </div>
@@ -629,6 +581,29 @@
         <p>© Copyright 2026. Built by Abdullah Alzabry (@flcz1)</p>
     </footer>
 
+    <!-- سكريبت ذكي يربط ملفات PDF العربية المرفوعة في GitHub بأزرار الشهادات تلقائياً -->
+    <script>
+        fetch('https://api.github.com/repos/flcz1/portfolio/contents/')
+            .then(res => res.json())
+            .then(files => {
+                files.forEach(file => {
+                    const name = file.name;
+                    const url = encodeURI(name);
+                    if (name.includes('eLearnSecurity') || name.includes('eJPT')) {
+                        document.getElementById('cert-ejpt').href = url;
+                    } else if (name.includes('Linux')) {
+                        document.getElementById('cert-linux').href = url;
+                    } else if (name.includes('أمن المعلومات') || name.includes('Sec')) {
+                        document.getElementById('cert-sec').href = url;
+                    } else if (name.includes('الشبكات') || name.includes('Network')) {
+                        document.getElementById('cert-net').href = url;
+                    } else if (name.includes('عمليات الأمن السيبراني')) {
+                        document.getElementById('cert-btl1').href = url;
+                    }
+                });
+            })
+            .catch(err => console.error(err));
+    </script>
     <script src="script.js"></script>
 </body>
 </html>
