@@ -1,17 +1,17 @@
-/* تخصيص شريط التمرير (Scrollbar) ليطابق الثيم الداكن والبنفسجي */
+/* تخصيص شريط التمرير (Scrollbar) بثيم Prussian Blue & Indigo */
 ::-webkit-scrollbar {
     width: 8px;
 }
 
 ::-webkit-scrollbar-track {
-    background: #1e1e24;
+    background: #08101d;
 }
 
 ::-webkit-scrollbar-thumb {
-    background: #c778dd;
+    background: #4f46e5;
     border-radius: 4px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-    background: #a855f7;
+    background: #6366f1;
 }
